@@ -8,21 +8,20 @@ public class Main {
         undo.addPedido("Pedido 2");
         undo.addPedido("Pedido 3");
 
-        // Listar comandos
-        System.out.println("Después de agregar pedidos:");
-        undo.listPedidos();
+        System.out.println();
 
-        // Eliminar el último comando
+        undo.listPedidos();
         undo.removeLastPedido();
 
-        // Listar comandos nuevamente
+        System.out.println();
+
+
         System.out.println("Después de eliminar el último pedido:");
         undo.listPedidos();
-
-        // Eliminar otro comando
         undo.removeLastPedido();
 
-        // Listar comandos al final
+        System.out.println();
+
         System.out.println("Después de eliminar otro pedido:");
         undo.listPedidos();
     }
